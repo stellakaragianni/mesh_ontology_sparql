@@ -1,0 +1,920 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ergasia_karagianni.com/"
+     xml:base="http://www.ergasia_karagianni.com/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vocab="http://id.nlm.nih.gov/mesh/vocab#">
+    <owl:Ontology rdf:about="http://www.ergasia_karagianni.com/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#allowableQualifier -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#allowableQualifier">
+        <rdfs:range rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor">
+        <rdfs:subPropertyOf rdf:resource="http://www.ergasia_karagianni.com/broader"/>
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#MeSHDescriptor"/>
+        <rdfs:range rdf:resource="http://id.nlm.nih.gov/mesh/vocab#MeSHDescriptor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#broaderQualifier -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#broaderQualifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.ergasia_karagianni.com/broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#concept -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#concept">
+        <rdfs:subPropertyOf rdf:resource="http://id.nlm.nih.gov/mesh/vocab#preferredConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#narrowerConcept -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#narrowerConcept"/>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#preferredConcept -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredConcept">
+        <rdfs:subPropertyOf rdf:resource="http://id.nlm.nih.gov/mesh/vocab#concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#preferredTerm -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredTerm">
+        <rdfs:subPropertyOf rdf:resource="http://www.ergasia_karagianni.com/term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#treeNumber -->
+
+    <owl:ObjectProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#treeNumber">
+        <rdfs:range rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TreeNumber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.ergasia_karagianni.com/broader"/>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/term -->
+
+    <owl:ObjectProperty rdf:about="http://www.ergasia_karagianni.com/term"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#active -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#active">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#annotation -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#annotation">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#dateCreated -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#dateCreated">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#dateEstablished -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#dateEstablished">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#dateRevised -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#dateRevised">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#historyNote">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#identifier">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#onlineNote -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#onlineNote"/>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#prefLabel"/>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#previousIndexing -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#previousIndexing"/>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote -->
+
+    <owl:DatatypeProperty rdf:about="http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/altLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ergasia_karagianni.com/altLabel"/>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/lexicalTag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ergasia_karagianni.com/lexicalTag"/>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/scopeNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ergasia_karagianni.com/scopeNote"/>
+    
+
+
+    <!-- http://www.ergasia_karagianni.com/thesaurusID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ergasia_karagianni.com/thesaurusID"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:domain rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Concept -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#MeSHDescriptor -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#MeSHDescriptor"/>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Qualifier -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#Qualifier">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Term -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#Term">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor">
+        <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/vocab#MeSHDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#TreeNumber -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/vocab#TreeNumber"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/C10.228.140.490.375 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/C10.228.140.490.375">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TreeNumber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/C10.228.140.490.375.290 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/C10.228.140.490.375.290">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TreeNumber"/>
+        <vocab:treeNumber rdf:resource="http://id.nlm.nih.gov/mesh/C10.228.140.490.375"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <rdfs:label>C10.228.140.490.375.290</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/D004827 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/D004827">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+        <rdfs:label>Epilepsy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/D004829 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/D004829">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000453"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000523"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000652"/>
+        <vocab:broaderDescriptor rdf:resource="http://id.nlm.nih.gov/mesh/D004827"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0007571"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0007572"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0335030"/>
+        <vocab:preferredConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0007570"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T014720"/>
+        <vocab:treeNumber rdf:resource="http://id.nlm.nih.gov/mesh/C10.228.140.490.375"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:annotation>&quot;generalized&quot; as opposed to &quot;focal&quot; or partial ( = EPILEPSIES, PARTIAL); prefer specific indentions; note entry term EPILEPSY, TONIC: do not confuse with EPILEPSY, TONIC-CLONIC</vocab:annotation>
+        <vocab:dateCreated>1976-04-27</vocab:dateCreated>
+        <vocab:dateEstablished>1992-01-01</vocab:dateEstablished>
+        <vocab:dateRevised>2001-07-25</vocab:dateRevised>
+        <vocab:historyNote>1992; was EPILEPSY, GENERALIZED (NON MESH) 1977-1991</vocab:historyNote>
+        <vocab:identifier>D004829</vocab:identifier>
+        <vocab:previousIndexing>Epilepsy (1966-1991)</vocab:previousIndexing>
+        <vocab:publicMeSHNote rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</vocab:publicMeSHNote>
+        <rdfs:label>Epilepsy, Generalized</rdfs:label>
+        <owl:priorVersion>Epilepsy (1966-1991)</owl:priorVersion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/D004830 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/D004830">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000139"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000175"/>
+        <vocab:allowableQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000469"/>
+        <vocab:broaderDescriptor rdf:resource="http://id.nlm.nih.gov/mesh/D004829"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0335129"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0335130"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0335131"/>
+        <vocab:preferredConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0007573"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T014725"/>
+        <vocab:treeNumber rdf:resource="http://id.nlm.nih.gov/mesh/C10.228.140.490.375.290"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:annotation>do not confuse with EPILEPSY, TONIC see EPILEPSY, GENERALIZED</vocab:annotation>
+        <vocab:dateCreated>1999-01-01</vocab:dateCreated>
+        <vocab:dateEstablished>1992-01-01</vocab:dateEstablished>
+        <vocab:dateRevised>2005-07-30</vocab:dateRevised>
+        <vocab:historyNote>1992(1963)</vocab:historyNote>
+        <vocab:identifier>D004830</vocab:identifier>
+        <vocab:nlmClassificationNumber>WL 385</vocab:nlmClassificationNumber>
+        <vocab:publicMeSHNote>1992; see EPILEPSY, GRAND MAL 1963-1991</vocab:publicMeSHNote>
+        <vocab:publicMeSHNote>Epilepsy, Tonic-Clonic</vocab:publicMeSHNote>
+        <rdfs:label>Epilepsy, Tonic-Clonic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0007570 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0007570">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0007571 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0007571">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0007572 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0007572">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0007573 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0007573">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+        <vocab:narrowerConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0335129"/>
+        <vocab:narrowerConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0335130"/>
+        <vocab:narrowerConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0335131"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T014725"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368060"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368078"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368080"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:identifier>M0007573</vocab:identifier>
+        <scopeNote>A generalized seizure disorder characterized by recurrent major motor seizures. The initial brief tonic phase is marked by trunk flexion followed by diffuse extension of the trunk and extremities. The clonic phase features rhythmic flexor contractions of the trunk and limbs, pupillary dilation, elevations of blood pressure and pulse, urinary incontinence, and tongue biting. This is followed by a profound state of depressed consciousness (post-ictal state) which gradually improves over minutes to hours. The disorder may be cryptogenic, familial, or symptomatic (caused by an identified disease process). (From Adams et al., Principles of Neurology, 6th ed, p329)</scopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030322 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030322">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030360 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030360">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030362 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030362">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030364 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030364">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030365 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030365">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030677 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030677">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030680 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030680">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030681 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030681">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+        <rdfs:label>parasites</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0030682 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0030682">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0335030 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0335030">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0335129 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0335129">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T368061"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368062"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:identifier>M0335129</vocab:identifier>
+        <rdfs:label>Cryptogenic Tonic-Clonic Epilepsy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0335130 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0335130">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T368063"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368072"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:identifier>M0335130</vocab:identifier>
+        <rdfs:label>Epilepsy, Tonic-Clonic, Familial</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M0335131 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/M0335131">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T368071"/>
+        <term rdf:resource="http://id.nlm.nih.gov/mesh/T368075"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:identifier>M0335131</vocab:identifier>
+        <rdfs:label>Epilepsy, Tonic-Clonic, Symptomatic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000139 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000139">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+        <vocab:broaderQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000209"/>
+        <vocab:preferredConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0030322"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T060685"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:annotation>subhead only; for biol phenomena or diseases induced by endogenous or exogenous substances; indexing policy: Manual 19.8.14; DF: /chem ind or /CI</vocab:annotation>
+        <vocab:dateCreated>1973-12-27</vocab:dateCreated>
+        <vocab:dateEstablished>1967-01-01</vocab:dateEstablished>
+        <vocab:dateRevised>2003-07-22</vocab:dateRevised>
+        <vocab:historyNote>1967; used with Category C &amp; F 1967-1974; C &amp; F3 1975-2000; C, F, &amp; G 2001 forward</vocab:historyNote>
+        <vocab:identifier>Q000139</vocab:identifier>
+        <vocab:onlineNote>search policy: Online Manual; use: main heading/CI or CI (SH) or SUBS APPLY CI</vocab:onlineNote>
+        <rdfs:label>chemically induced</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000175 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000175">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030362"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030364"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030365"/>
+        <vocab:preferredConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0030360"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T060730"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:annotation>subheading only; includes &quot;examination&quot;, &quot;symptoms&quot;</vocab:annotation>
+        <vocab:dateCreated>1973-12-27</vocab:dateCreated>
+        <vocab:dateEstablished>1966-01-01</vocab:dateEstablished>
+        <vocab:dateRevised>2017-04-11</vocab:dateRevised>
+        <vocab:historyNote>66; used with Category C &amp; F 1966-74; C &amp; F3 1975 forward</vocab:historyNote>
+        <vocab:identifier>Q000175</vocab:identifier>
+        <vocab:onlineNote>search policy: Online Manual; use: main heading/DI or DI (SH) or SUBS APPLY DI</vocab:onlineNote>
+        <rdfs:label>diagnosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000209 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000209">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000453 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000453">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000469 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000469">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+        <vocab:broaderQualifier rdf:resource="http://id.nlm.nih.gov/mesh/Q000209"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030680"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030681"/>
+        <vocab:concept rdf:resource="http://id.nlm.nih.gov/mesh/M0030682"/>
+        <vocab:preferredConcept rdf:resource="http://id.nlm.nih.gov/mesh/M0030677"/>
+        <vocab:preferredTerm rdf:resource="http://id.nlm.nih.gov/mesh/T061093"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:annotation>subhead only; for protozoa &amp; higher parasites; see also /microbiology &amp; /virology; see MeSH scope note in Introduction; indexing policy: Manual 19.8.50; DF: /parasitol or /PS</vocab:annotation>
+        <vocab:dateCreated>1974-10-23</vocab:dateCreated>
+        <vocab:dateEstablished>1975-01-01</vocab:dateEstablished>
+        <vocab:dateRevised>2015-07-01</vocab:dateRevised>
+        <vocab:historyNote>75; used with Category A, B1-2, B6, C &amp; F3 1975-86; A, B1-2, B6, C, F3 &amp; INFANT, NEWBORN+ 1987-89; A, B1-2, B6, C &amp; F3 1990 forward</vocab:historyNote>
+        <vocab:identifier>Q000469</vocab:identifier>
+        <vocab:onlineNote>search policy: Online Manual; use: main heading/PS or PS (SH) or SUBS APPLY PS</vocab:onlineNote>
+        <rdfs:label>parasitology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000523 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000523">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/Q000652 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/Q000652">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T014720 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T014720">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T014725 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T014725">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+        <vocab:active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vocab:active>
+        <vocab:dateCreated>1999-01-01</vocab:dateCreated>
+        <vocab:identifier>T014725</vocab:identifier>
+        <vocab:prefLabel>Epilepsy, Tonic-Clonic</vocab:prefLabel>
+        <altLabel>Epilepsy, Tonic Clonic</altLabel>
+        <altLabel>Tonic-Clonic Epilepsies</altLabel>
+        <altLabel>Tonic-Clonic Epilepsy</altLabel>
+        <lexicalTag>NON</lexicalTag>
+        <thesaurusID>NLM (1966)</thesaurusID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T060685 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T060685">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T060730 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T060730">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T061093 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T061093">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368060 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368060">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368061 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368061">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368062 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368062">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368063 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368063">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368071 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368071">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368072 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368072">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368075 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368075">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368078 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368078">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/T368080 -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/T368080">
+        <rdf:type rdf:resource="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Concept -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#Concept">
+        <rdfs:label>MeSH Concept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Qualifier -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#Qualifier">
+        <rdfs:label>MeSH Qualifier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#Term -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#Term">
+        <rdfs:label>MeSH Term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor">
+        <rdfs:label>MeSH TopicalDescriptor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#TreeNumber -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#TreeNumber">
+        <rdfs:label>MeSH TreeNumber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#allowableQualifier -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#allowableQualifier">
+        <rdfs:label>allowableQualifier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor">
+        <rdfs:label>broaderDescriptor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#concept -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#concept">
+        <rdfs:label>concept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#preferredConcept -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredConcept">
+        <rdfs:label>preferredConcept</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#preferredTerm -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredTerm">
+        <rdfs:label>preferredTerm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/vocab#treeNumber -->
+
+    <owl:NamedIndividual rdf:about="http://id.nlm.nih.gov/mesh/vocab#treeNumber">
+        <rdfs:label>treeNumber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Concept">
+        <rdfs:comment>MeSH concepts are meanings. Many MeSH concepts contain synonymous terms. meshv:Concept identifiers begin with &apos;M&apos; such as M0000013, &apos;Congenital Abnormalities&apos;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Qualifier">
+        <rdfs:comment>Also known as Subheadings, these provide context to the use of a MeSH Heading.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Term">
+        <rdfs:comment>MeSH terms provide synonymous names for MeSH concepts. Terms have &apos;T&apos; identifiers, and are considered either preferred or lexical variants, such as &apos;Congenital Abnormalities&apos; as opposed to &apos;Abnormality, Congenital&apos;.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor">
+        <rdfs:comment>Topical Descriptors indicate the subject of an indexed item such as a journal article. See D063926, &apos;Drug Hypersensitivity Syndrome&apos;, for an example.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#TreeNumber">
+        <rdfs:comment>Tree Numbers are used to organize MeSH Descriptors in a broader-than/narrower-than manner.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#allowableQualifier">
+        <rdfs:comment>Relates Descriptors to Qualifiers. A specific Qualifier allowed in combination with the Descriptor</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor">
+        <rdfs:comment>Relates one Descriptor to another. The immediate parent Descriptor(s) of a given Descriptor based on the TreeNumber hierarchy. Example: both DUI D007254 (Information Science) and DUI D008491 (Medical Informatics Applications) are parents of DUI D016247 (Information Storage and Retrieval).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#concept">
+        <rdfs:comment>Relates Descriptors, Qualifiers or SupplementaryConceptRecords to Concepts. Designates a member of a collection of Concepts for a Descriptor, Qualifier or SCR.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredConcept">
+        <rdfs:comment>Relates Descriptors or Supplementary Concept Records to Concepts. The preferred concept is frequently a broader concept that includes narrower sub-concepts, but may also be one among several distinct concepts. The preferred concept is selected as the primary or most prominent representation among the concepts in the literature. meshv:preferredConcept is a subproperty of meshv:concept.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#preferredTerm">
+        <rdfs:comment>Relates Concepts, Descriptors, Qualifiers or SupplementaryConceptRecords to Terms. Indicates that the Term is the preferred term for a Concept, Descriptor, Qualifier, or SupplementaryConceptRecord.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#treeNumber">
+        <rdfs:comment>Relates Descriptors or Qualifiers to TreeNumbers. Alpha-numeric string referring to location within a Descriptor or Qualifier hierarchy. Used for browsing the MeSH vocabulary and for inclusive searches by retrieval systems using MeSH. (Note that the Trees hierarchy is not represented using subelements. The hierarchy is represented by the TreeNumber itself.) Up to thirteen hierarchical levels.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Concept"/>
+            <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Qualifier"/>
+            <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#Term"/>
+            <rdf:Description rdf:about="http://id.nlm.nih.gov/mesh/vocab#TreeNumber"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
